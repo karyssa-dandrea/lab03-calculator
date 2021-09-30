@@ -6,6 +6,15 @@ const addAnswer = document.getElementById('add-answer');
 
 console.log(addInput1, addInput2, addButton, addAnswer);
 
+import { sub } from './calculations.js';
+const subNum1 = document.getElementById('sub-number1');
+const subNum2 = document.getElementById('sub-number-2');
+const subButton = document.getElementById('sub-button');
+const subAnswer = document.getElementById('sub-answer');
+
+console.log(subNum1, subNum2, subButton, subAnswer);
+
+
 
 addButton.addEventListener('click', ()=>{
   const value1 = Number(addInput1.value);
@@ -15,3 +24,6 @@ addButton.addEventListener('click', ()=>{
   console.log(result);
   addAnswer.textContent = result;
 })
+
+
+
