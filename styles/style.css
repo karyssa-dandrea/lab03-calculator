@@ -3,15 +3,25 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background-color: black;
+    
 }
 
 .calculation {
     border: 1px solid black;
-    background-color: darkkhaki;
+    background-color: rgb(185, 156, 202);
+    padding: 20px;
 
 }
 
 h1, h2 {
     font-family: monospace;
+}
+
+button:hover {
+    color:oldlace;
+};
+
+button {
+    border-radius: 40%;
 }
