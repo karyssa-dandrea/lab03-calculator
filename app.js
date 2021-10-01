@@ -23,6 +23,14 @@ const multAnswer = document.getElementById('mult-answer');
 console.log(multInput1, multInput2, multButton, multAnswer);
 
 
+import { div } from './calculations.js';
+const divInput1 = document.getElementById('div-number-1');
+const divInput2 = document.getElementById('div-number-2');
+const divButton = document.getElementById('div-button');
+const divAnswer = document.getElementById('div-answer');
+
+console.log(divInput1, divInput2, divButton, divAnswer);
+
 
 
 addButton.addEventListener('click', ()=>{
@@ -45,11 +53,21 @@ subButton.addEventListener('click', ()=>{
 
 
 multButton.addEventListener('click', ()=>{
-  const value1 = Number(multInput1.value);
-  const value2 = Number(multInput2.value);
-  const result = mult(value1, value2);
+    const value1 = Number(multInput1.value);
+    const value2 = Number(multInput2.value);
+    const result = mult(value1, value2);
 
-  console.log(result);
-  multAnswer.textContent = result;
+    console.log(result);
+    multAnswer.textContent = result;
+});
+
+
+divButton.addEventListener('click', ()=>{
+    const value1 = Number(divInput1.value);
+    const value2 = Number(divInput2.value);
+    const result = div(value1, value2);
+
+    console.log(result);
+    divAnswer.textContent = result;
 });
 
